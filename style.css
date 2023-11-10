@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1 {
+.logo {
     /* border: 2px solid red; */
     color: rgb(255, 0, 43);
+    text-decoration: none;
+    font-size: 2rem;
     /* text-align: center; */
 }
 header{
@@ -18,6 +20,7 @@ header{
 header button{
     padding :0rem 3rem;
     color: rgb(213, 14, 41);
+    
 }
 
 
@@ -29,12 +32,49 @@ header button{
     z-index: -1;
 }
 
+.home-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid aqua;
+    flex-direction: column;
+    /* border: 2px solid rgb(226, 241, 241); */
     height: 100vh;
     color: white;
+    gap: 2rem;
+    width: 50vw;
+}
+.container h1{
+    font-size: 3rem;
+    color: red;
+}
+
+h3{
+    /* border: 2px solid red; */
+    align-items: center;
+    display: flex;
+    padding: 0 10rem ;
+}
+.container .form-content{
+    /* border: 2px solid red; */
+    /* display: block; */
+    gap: 0;
+    width: 100%;
+
+}
+
+.form-content input{
+     width: 70%;
+     height: 5vh;
+}
+.form-content button{
+    width: 29%;
+    height: 5vh;
+    background-color: red;
 }
